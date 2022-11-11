@@ -1,0 +1,13 @@
+.form-cars{
+    background-color: #ccc;
+    border-radius: 12px;
+}
+
+.title-cars{
+    border: 1px solid #888;
+    border-radius: 12px
+}
+
+.details-cars{
+    color: purple;
+}
