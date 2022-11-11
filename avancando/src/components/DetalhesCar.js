@@ -1,4 +1,5 @@
 const DetalhesCar = ({marca, modelo, km}) => {
+
   return (
     <div>
         <h2>Detalhes carro:</h2>
