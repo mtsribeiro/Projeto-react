@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 import './Game.css'
 
-const Game = ({VerifyGame, pickedWord, pickedCategory, letters, guessedLetters, wrongLetters, guesses, score}) => {
+const Game = ({verifyLetter, pickedWord, pickedCategory, letters, guessedLetters, wrongLetters, guesses, score}) => {
 
   const [letter, setLetter] = useState('')
   const letterInputRef = useRef(null)
@@ -9,7 +9,7 @@ const Game = ({VerifyGame, pickedWord, pickedCategory, letters, guessedLetters, 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    VerifyGame(letter)
+    verifyLetter(letter)
     setLetter('')
 
     letterInputRef.current.focus()
